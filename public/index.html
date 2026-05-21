@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Booking Barbershop</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Booking Barbershop</h1>
+
+    <form id="bookingForm" class="booking-form">
+      <label>Nama:
+        <input type="text" name="customer_name" required>
+      </label>
+
+      <label>No HP:
+        <input type="tel" name="customer_phone" required>
+      </label>
+
+      <label>Layanan:
+        <select name="service_id" id="serviceSelect" required>
+          <option value="">-- Pilih layanan --</option>
+        </select>
+      </label>
+
+      <label>Tanggal:
+        <input type="date" name="booking_date" required>
+      </label>
+
+      <label>Jam:
+        <input type="time" name="booking_time" required>
+      </label>
+
+      <button type="submit">Booking</button>
+    </form>
+    <a href="/admin-login.html" class="admin-link">Login sebagai Admin</a>
+  </div>
+
+  <script src="/js/toast.js"></script>
+  <script src="/js/booking.js"></script>
+</body>
+</html>
